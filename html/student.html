@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container border border-secondary">
+    <header class="container-fluid">
+        <img src="../img/website.png" alt="website" style="height:300px;width:100%;">
+    </header>
+    <div class="container ">
+        <ul class="list-inline mt-3 ">
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;">Trang chủ</a></li>
+            <li class="list-inline-item"><a href="#" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#myModal">Đăng ký</a></li>
+        </ul>
+    </div>
+ 
+    <section>
+        <table class="table table-striped ">
+            <p class="text-center">LIST OF MEMBERS</p>
+            <thead>
+                <tr>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Giới tính</th>
+                <th>Số điện thoại</th>
+                <th>Ngày sinh</th>
+                <th>Địa chỉ</th>
+                <th>Khóa học</th>
+                <th>Học phí</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>Hoàng Lâm</td>
+                <td>Nam</td>
+                <td>09008899</td>
+                <td>20/3/2001</td>
+                <td>123 Nguyễn Du, p5, quận Gò Vấp, TP.HCM</td>
+                <td>6 tuần</td>
+                <td>8,000,000</td>
+            </tr>
+        </table>
+    </section>
+    <!-- The modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Thông tin đăng ký</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                  <label for="fullname" class="form-label col-sm-3">Họ và tên</label>
+                      <input type="text" class="form-control" name="fullname" id="fullname">
+                      <span id="errorImage" class="text-danger">*</span>
+              </div>
+              <div class="form-group">
+                  <label for="telephone" class="form-label">Số điện thoại</label>
+                  <input type="tel" class="form-control" name="telephone" id="telephone">
+                  <span id="errorImage" class="text-danger">*</span>
+              </div>
+              <div class="form-group">
+                  <label for="date" class="form-label">Ngày sinh</label>
+                  <input type="date" name="date" id="date" class="form-control">
+                  <span id="errorImage" class="text-danger">*</span>
+              </div>
+              <div class="form-group">
+                  <label for="address" class="form-label">Địa chỉ</label>
+                  <input type="text" class="form-control" id="address" name="address">
+              </div>
+              <div class="form-group">
+                  <label for="choise" class="form-label">Bạn muốn tham gia khóa nào?</label>
+                  <select name="choise" id="choise" class="form-select">
+                      <option value="1">Khóa 2 tuần</option>
+                      <option value="2">Khóa 4 tuần</option>
+                      <option value="3">Khóa 6 tuần</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="" class="form-label">Học phí</label>
+                  <input type="text" disabled class="form-control"> 
+              </div>
+              <div class="form-group">
+                  <label for="image" class="form-label">Ảnh đại diện</label>
+                  <input type="file" name="image" id="image" class="form-control" >
+                  <span id="errorImage" class="text-danger">*</span>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success mt-5" data-bs-dismiss="modal" style="width: 100%;">Lưu</button>
+            </div> 
+          </div>
+        </div>
+      </div>
+</div>
+</body>
+</html> 
